@@ -2,38 +2,53 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+    font-family: 'Montserrat', sans-serif;
 }
 
 li, a, button{
     font-family: 'Montserrat', sans-serif;
     font-weight:500 ;
     font-size: 16px;
-    color: #edf0f1;
+    color: black;
     text-decoration: none;
 }
 
-
-
 header{
-    display: flex;
-    justify-content: space-between;
+    display:flex;
+    flex-direction: row;
+    /*controls header alignment*/
+    column-gap: 700px;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 2%;
 }
 
+.logoword{
+    float: right;
+    margin-top: 1px ;
+    padding-left: 7px;
+    font-size: 230%;
+}
+
+
 .logo{
+    float:left;
     cursor: pointer;
-    width: 70px;
+    width: 35px;
 }
 
 .navlinks{
     list-style: none;
+    
 }
 
 .navlinks li{
     display: inline-block;
-    padding: 0px 20px;
+    padding: 9px 22px;
+    background-color: #0088a9;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
 .navlinks li a{
@@ -41,19 +56,56 @@ header{
 }
 
 .navlinks li a:hover{
-    color: #0088a9
+    color: white
 }
 
+/*box sizing of get started*/
 button{
-    padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-
+    padding: 9px 22px;
 }
 
 button:hover{
+    cursor: pointer;
     background-color:rgba(0,136,169,0.8) ;
 }
+
+.contentheader{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.refresh:hover{
+    color: white;
+    cursor: pointer;
+}
+/*padding centers, margin pushes other elements away*/
+
+.refresh{
+    display: inline-block;
+    border: none;
+    border-radius: 40px;
+    background-color: #0088a9;
+    padding: 6px ;
+    margin: 0 670px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    font-size: x-small; 
+}
+
+.timeupdate{
+    margin-bottom: -0.9%;
+    font-size: large;
+    
+}
+
+.screener{
+    margin-bottom: -0.3%;
+    padding-left: 4.2%;
+}
+/* just updates the part showing the time*/
+
+#time{
+    font-size: small;
+}
+
