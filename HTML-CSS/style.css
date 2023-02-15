@@ -79,7 +79,8 @@ button:hover{
     color: white;
     cursor: pointer;
 }
-/*padding centers, margin pushes other elements away*/
+
+
 
 .refresh{
     display: inline-block;
@@ -96,9 +97,7 @@ button:hover{
 .timeupdate{
     margin-bottom: -0.9%;
     font-size: large;
-    
 }
-
 .screener{
     margin-bottom: -0.3%;
     padding-left: 4.2%;
