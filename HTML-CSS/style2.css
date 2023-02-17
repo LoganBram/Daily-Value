@@ -5,10 +5,10 @@
 
 body{
     margin: 0px;
-    background-color: hsla(216, 33%, 96%)
+    
 }
 header{
-    background-color: hsla(210, 24%, 16%, 95%);
+    background-color: #292E49;
     
 }
 nav{
@@ -37,7 +37,6 @@ nav{
     text-decoration: none;
     transition: all 0.3s ease 0s;
     cursor: pointer;
-   
 }
 
 .cta{
@@ -47,7 +46,6 @@ nav{
     padding: 8px;
     margin-right: 40px;
     font-size: 12px;
-    
 }
 .cta:hover{
     color: black;
@@ -63,41 +61,51 @@ nav{
     font-size: 20px;
 }
 
-/*top nav bar complete*/
 
 
+/*contentheader -> market constantly changes area*/
 .contentheader{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    
+    flex-direction: column;
+    align-items: center; 
 }
 
-/* photo on top of button*/
-.refreshpic{
-    width: 20px;
-}
-
-/*button itself*/
-.refresh{
-    border: none;
-    margin-top: 67px;
-    height: 10px;
-    margin-left: -500px;
-}
-
-.refresh:hover{
-    cursor: pointer;
-}
-/* "market change screener" */
-.screener{
-    margin-left: 810px;
-    font-size: 25px;
-    margin-top: 60px;
-    
+.contentheader h1, h2{
+    margin: 3px;
+    color: white;
+    font-size: 26px;
     
 }
+.contentheader{
+    background-image: linear-gradient(to bottom right, #292E49, #536976 
+    );
+    padding-bottom: 150px;
+}
+.contentheader h1{
+    margin-top: 150px;
+    
+}
+#HomeSearch{
+    background-color: white;
+  width: 750px;
+  height: 40px;
+  border-radius: 12px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+
+input {
+    all: unset;
+    font: 16px system-ui;
+    color: black;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+  }
 
 .timeupdate{
     margin-top: 10px;
@@ -111,8 +119,8 @@ nav{
     font-size: small;
 }
 
-body{
-    background-image: linear-gradient(to bottom right, rgba(180,180,180,1), white);
+.main{
+    background-color: hsl(216, 33%, 96%);
 }
 
 /* 'most popular header' */
@@ -132,6 +140,7 @@ body{
     
 }
 .popular{
+    box-shadow: 0px 3px 5px #000;
     border-style: solid;
    border-width: 1px;
    border-color: black;
@@ -156,6 +165,7 @@ body{
     font-size: 17px;
     margin-top: 70px;
     margin-left: 375px;
+    color: black;
     
 }
 
