@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/style2.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Value</title>
+  </head>
+  <body>
+    <header>
+      
+      <nav>
+        <div class="FullLogo">
+          <h1 class="logoword">DailyValue</h1>
+        </div>
+        <ul class="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="{{ url_for('views.popular')}}">Most Popular</a></li>
+          <li><a href="biggestchanges.html">Biggest Changes</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a class="cta" href="#">Account</a>
+      </nav>
+      
+    </header>
+    <div class="main">
+      <div class="maincontainer">
+        <div class="contentheader">
+          <h1>THE MARKET CONSTANTLY CHANGES</h1>
+          <h2>KEEP YOURSELF UPDATED</h2>
+          <form id="HomeSearch" role="search">
+            <input
+              type="search"
+              id="query"
+              name="q"
+              placeholder="Search Stocks Here..."
+            />
+          </form>
+        </div>
+        <h1 class="timeupdate">Updated: <span id="time"></span></h1>
+        </div>
+        <div class="biggestcontent"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
