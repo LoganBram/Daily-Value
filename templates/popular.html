@@ -1,3 +1,7 @@
+{% extends "base.html" %}
+
+{% block navbar %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,20 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daily Value</title>
 </head>
-<header>
-    <nav>
-      <div class="FullLogo">
-        <h1 class="logoword">DailyValue</h1>
-      </div>
-      <ul class="navlinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="{{ url_for('views.popular')}}">Most Popular</a></li>
-        <li><a href="#">Biggest Changes</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <a class="cta" href="#">Account</a>
-    </nav>
-  </header>
 <body>
     <h2 class="mostpopular">Most Popular</h2>
         <div class="changecontent">
@@ -83,3 +73,5 @@
       </div>
 </body>
 </html>
+
+{% endblock %}

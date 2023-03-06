@@ -1,3 +1,6 @@
+{% extends "base.html" %}
+
+{% block navbar %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,22 +11,6 @@
     <title>Daily Value</title>
   </head>
   <body>
-    <header>
-      
-      <nav>
-        <div class="FullLogo">
-          <h1 class="logoword">DailyValue</h1>
-        </div>
-        <ul class="navlinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="{{ url_for('views.popular')}}">Most Popular</a></li>
-          <li><a href="biggestchanges.html">Biggest Changes</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <a class="cta" href="#">Account</a>
-      </nav>
-      
-    </header>
     <div class="main">
       <div class="maincontainer">
         <div class="contentheader">
@@ -46,3 +33,4 @@
   </body>
   <script src="script.js"></script>
 </html>
+{% endblock %}
